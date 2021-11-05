@@ -1,0 +1,1313 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #120f2c;
+  max-width: auto;
+}
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../assets/fonts/roboto/RobotoRegular.ttf);
+}
+
+@font-face {
+  font-family: Nexa;
+  src: url(../assets/fonts/nexa/NexaLight.otf);
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url(../assets/fonts/roboto/RobotoLight.ttf);
+}
+
+.main-container {
+  max-width: 100vw;
+  height: 100vh;
+  background: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-container {
+  max-width: auto;
+  height: auto;
+  background: #120f2c;
+  flex-wrap: wrap;
+}
+
+.navbar-content {
+  max-width: 1440px;
+  height: auto;
+  background: #120f2c;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  flex: 0.4;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  background: #120f2c;
+  height: auto;
+}
+
+.logo-container .hamburger {
+  margin-right: 20px;
+}
+
+.navbar-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 0.2;
+  align-items: flex-start;
+  max-width: auto;
+  flex-wrap: wrap;
+  background: #120f2c;
+}
+
+.navbar-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background: #120f2c;
+}
+
+.navbar-input .username {
+  font-family: Nexa;
+  font-size: 28px;
+  line-height: 42.45px;
+  color: #ffffff;
+}
+
+.section-two-container {
+  background: #120f2c;
+  max-width: 100vw;
+  height: auto;
+}
+
+.section-two-container .section-two-content {
+  display: flex;
+  flex-wrap: wrap;
+  background: #120f2c;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  height: inherit;
+  justify-content: flex-start;
+}
+
+.section-two-container .section-two-content .left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: #120f2c;
+  flex: 0.2;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  height: inherit;
+  justify-content: flex-start;
+}
+
+.menu-title {
+  font-family: Nexa;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.section-two-container .section-two-content .left .dashboard-items li {
+  display: flex;
+  background: transparent;
+  align-items: center;
+  font-family: RobotoLight;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: start;
+  color: #ffffff;
+}
+
+.section-two-container .section-two-content .left .dashboard-items li img {
+  margin-right: 10px;
+}
+
+.section-two-container .section-two-content .left {
+  background: #120f2c;
+}
+
+.section-two-container .section-two-content .right {
+  display: flex;
+  flex-wrap: wrap;
+  background: #120f2c;
+  flex: 0.8;
+  margin-left: auto;
+  margin-right: auto;
+  height: inherit;
+  justify-content: space-between;
+}
+
+.section-two-container .section-two-content .right .form-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: #120f2c;
+  height: auto;
+  flex: 1;
+  margin-top: 27px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .form-container
+  .form-section {
+  display: flex;
+  flex-wrap: wrap;
+  background: #171433;
+  height: 60vh;
+  align-content: flex-start;
+}
+
+.section-two-container .section-two-content .right .form-container .form-title {
+  font-family: Nexa;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-left: 25px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-right: 15px;
+}
+
+.section-two-container .section-two-content .right .form-container hr {
+  background: #f6ae00;
+  height: 0.1px;
+  width: 1100px;
+  border: 1px solid #f6ae00;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .form-container
+  .form-section
+  .name-of-deceased {
+  width: 490px;
+  height: 40px;
+  margin: 5px;
+  background: #120f2c;
+  border: none;
+  outline: none;
+  font-family: Nexa;
+  font-size: 16px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .form-container
+  .form-section
+  .yb-yd {
+  width: 490px;
+  height: 40px;
+  margin: 5px;
+  background: #120f2c;
+  border: none;
+  outline: none;
+  font-family: Nexa;
+  font-size: 16px;
+}
+
+input[type="date"] {
+  color: #888888;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .form-container
+  .form-section
+  .memorial-title {
+  width: 622px;
+  height: 40px;
+  background: #120f2c;
+  border: none;
+  outline: none;
+  font-family: Nexa;
+  font-size: 16px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .form-container
+  .form-section
+  .name-of-deceased,
+.memorial-title {
+  margin-left: 25px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .form-container
+  .form-section
+  .memorial-title {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-right: 15px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .form-container
+  .form-section
+  .deceased-image-container {
+  width: 347px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-right: 15px;
+  padding-left: 10px;
+  background: #120f2c;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: Nexa;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .form-container
+  .form-section
+  .biography {
+  width: 998px;
+  height: 250px;
+  margin-bottom: 0px;
+  margin-right: 15px;
+  margin-left: 25px;
+  margin-top: 15px;
+  background: #120f2c;
+  font-style: Nexa;
+  font-style: 16px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .form-container
+  .form-section
+  .biography
+  .bio-placeholder {
+  color: #888888;
+  font-size: 16px;
+  font-family: Nexa;
+  margin: 5px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .form-container
+  .button-container {
+  background: #171433;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .form-container
+  .button-container
+  .create-memorial-button {
+  width: 215px;
+  background: #f6ae00;
+  border: 1px solid #f6ae00;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 130px;
+  margin-top: 23px;
+  font-family: RobotoRegular;
+  font-size: 18px;
+}
+
+.footer-container {
+  background: #120f2c;
+  max-width: 100vw;
+  height: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #000000;
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  height: inherit;
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.footer-content .first-section {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-content .first-section .left-section {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0.6;
+  align-items: center;
+}
+
+.footer-content .first-section .left-section p {
+  margin: 10px;
+  font-family: RobotoRegular;
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer-content .first-section .left-section .logo img {
+  margin-left: 20px;
+}
+
+.footer-content .first-section .right-section {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0.4;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-content .first-section .right-section .powered-by {
+  font-family: RobotoRegular;
+  color: #797979;
+  font-size: 14px;
+}
+
+.footer-content .second-section {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-content .second-section .left-section {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0.6;
+  align-items: center;
+}
+
+.footer-content .second-section .right-section {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0.4;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-content .second-section .left-section .lorem-ipsum {
+  font-family: RobotoRegular;
+  color: #797979;
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+.footer-content .second-section .right-section .copy-wright {
+  font-family: RobotoRegular;
+  color: #797979;
+  font-size: 14px;
+  margin-left: 30px;
+  line-height: 16.41px;
+}
+
+.active {
+  background: #1d1d3b !important;
+  border-radius: 32px;
+  width: 183px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-two-container .section-two-content .right .memories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #171433;
+  height: auto;
+  flex: 1;
+  margin-top: 27px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: transparent;
+  height: auto;
+  width: 300px;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .memorial-image-container {
+  background: url(../assets/images/kwame-nkruma.png);
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .memorial-image-container
+  img {
+  width: 300px;
+  height: 200px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .memorial-image-container
+  .memorial-date {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .memorial-image-container
+  .memorial-date
+  .date {
+  color: #f6ae00;
+  font-family: Nexa;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  padding: 3px;
+  line-height: 18.19px;
+  font-size: 12px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .memorial-title {
+  background: transparent;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .memorial-title
+  .title {
+  font-family: RobotoLight;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .memorial-title
+  .memorial-description {
+  font-family: RobotoLight;
+  font-size: 12px;
+  line-height: 14.06px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .memorial-image-container
+  .view-as-admin-container
+  .view-as-admin {
+  background: rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  color: #ffffff;
+  font-family: RobotoLight;
+  font-size: 12px;
+  line-height: 14.06px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .memorial-image-container
+  .view-as-admin-container:hover
+  .view-as-admin {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .memorial-image-container
+  .view-as-admin
+  img {
+  width: auto;
+  height: auto;
+  margin: 3px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .controls
+  .edit {
+  border: 1px solid #f6ae00;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47.92px;
+  height: 27px;
+  margin: 5px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .controls
+  .share {
+  border: 1px solid #f6ae00;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47.92px;
+  height: 27px;
+  margin: 5px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .controls
+  .trash {
+  border: 1px solid #f6ae00;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47.92px;
+  height: 27px;
+  margin: 5px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .controls
+  .edit
+  img {
+  width: 20px;
+  height: 20px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .controls
+  .share
+  img {
+  width: 20px;
+  height: 20px;
+}
+
+.section-two-container
+  .section-two-content
+  .right
+  .memories-container
+  .memorial-item
+  .controls
+  .trash
+  img {
+  width: 20px;
+  height: 20px;
+}
+
+@media all and (max-width: 320px) {
+  .navbar-container .navbar-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: transparent;
+  }
+
+  .section-two-container .section-two-content .right .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+  }
+
+  .section-two-container .section-two-content .right .form-container hr {
+    background: #f6ae00;
+    height: 0.1px;
+    width: 280px;
+    border: 1px solid #f6ae00;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .name-of-deceased {
+    margin: 10px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .form-title {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .name-of-deceased {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .yb-yd {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .memorial-title {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .deceased-image-container {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .biography {
+    width: 300px;
+    height: 100px;
+    margin: 5px;
+    background: chocolate;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .button-container {
+    background: rosybrown;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .button-container
+    .create-memorial-button {
+    width: 215px;
+    background: #f6ae00;
+    border: 1px solid #f6ae00;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    font-family: RobotoRegular;
+    font-size: 18px;
+  }
+
+  .section-two-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-container {
+    background: #000000;
+    max-width: 100vw;
+    height: auto;
+  }
+
+  .footer-content {
+    padding: 0px;
+  }
+
+  .footer-content .first-section .left-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .first-section .right-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section .left-section .lorem-ipsum {
+    margin: 18px;
+    text-align: center;
+  }
+
+  .footer-content .first-section .right-section .powered-by {
+    margin: 18px;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .navbar-container .navbar-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: tomato;
+  }
+
+  .section-two-container .section-two-content .right .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+  }
+
+  .section-two-container .section-two-content .right .form-container hr {
+    background: #f6ae00;
+    height: 0.1px;
+    width: 280px;
+    border: 1px solid #f6ae00;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .name-of-deceased {
+    margin: 10px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .form-title {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .name-of-deceased {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .yb-yd {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .memorial-title {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .deceased-image-container {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .biography {
+    width: 300px;
+    height: 100px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .button-container {
+    background: rosybrown;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .button-container
+    .create-memorial-button {
+    width: 215px;
+    background: #f6ae00;
+    border: 1px solid #f6ae00;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    font-family: RobotoRegular;
+    font-size: 18px;
+  }
+
+  .section-two-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-container {
+    background: #000000;
+    max-width: 100vw;
+    height: auto;
+  }
+
+  .footer-content {
+    padding: 0px;
+  }
+
+  .footer-content .first-section .left-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .first-section .right-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section .left-section .lorem-ipsum {
+    margin: 18px;
+    text-align: center;
+  }
+
+  .footer-content .first-section .right-section .powered-by {
+    margin: 18px;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 430px) {
+  body {
+    background: tomato;
+  }
+
+  .navbar-container .navbar-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: tomato;
+  }
+
+  .section-two-container .section-two-content .right .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+  }
+
+  .section-two-container .section-two-content .right .form-container hr {
+    background: #f6ae00;
+    height: 0.1px;
+    width: 280px;
+    border: 1px solid #f6ae00;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .name-of-deceased {
+    margin: 10px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .form-title {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .name-of-deceased {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .yb-yd {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .memorial-title {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .deceased-image-container {
+    width: 290px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .form-section
+    .biography {
+    width: 300px;
+    height: 100px;
+    margin: 5px;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .button-container {
+    background: rosybrown;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-two-container
+    .section-two-content
+    .right
+    .form-container
+    .button-container
+    .create-memorial-button {
+    width: 215px;
+    background: #f6ae00;
+    border: 1px solid #f6ae00;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    font-family: RobotoRegular;
+    font-size: 18px;
+  }
+
+  .section-two-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-container {
+    background: #000000;
+    max-width: 100vw;
+    height: auto;
+  }
+
+  .footer-content {
+    padding: 0px;
+  }
+
+  .footer-content .first-section .left-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .first-section .right-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section .left-section .lorem-ipsum {
+    margin: 18px;
+    text-align: center;
+  }
+
+  .footer-content .first-section .right-section .powered-by {
+    margin: 18px;
+    text-align: center;
+  }
+}

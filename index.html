@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Memories</title>
+    <meta name="theme-color" content="#F6AE00" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    @import url("css/index.css");
+  </head>
+  <body>
+    <div class="main-container">
+      <!--start of navbar container-->
+      <div class="navbar-container">
+        <div class="navbar-content">
+          <div class="logo-container">
+            <img src="assets/images/logo.png" alt="Memories Logo" />
+          </div>
+
+          <div class="navbar-input-container">
+            <div class="navbar-input">
+              <input
+                id="login-email"
+                class="login-email"
+                type="text"
+                placeholder="Email Address"
+                autocomplete="off"
+              />
+              <input
+                id="login-password"
+                class="login-password"
+                type="password"
+                placeholder="password"
+                autocomplete="off"
+              />
+
+              <div class="signin">
+                <p>Signin</p>
+              </div>
+
+              <div class="volume-x">
+                <img src="assets/icons/volume-x.png" alt="mute" />
+              </div>
+            </div>
+            <div class="forgot-password"><p>Forgot Password?</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!--end of navbar container-->
+
+      <!--start of section two-->
+      <div class="section-two-container">
+        <div class="section-two-content">
+          <div class="getting-started">
+            <p class="first-text">GET</p>
+            <p class="first-text">STARTED</p>
+            <p class="second-text">Send condolences</p>
+          </div>
+
+          <div class="register-form">
+            <div class="register-input">
+              <div
+                style="display: none"
+                id="feedback"
+                class="alert alert-danger"
+                role="alert"
+              >
+                This is a danger alert—check it out!
+              </div>
+
+              <input
+                id="first_name"
+                class="first-name"
+                type="text"
+                placeholder="First Name"
+                autocomplete="off"
+              />
+
+              <input
+                id="last_name"
+                class="last-name"
+                type="text"
+                placeholder="Last Name"
+                autocomplete="off"
+              />
+
+              <input
+                id="email_address"
+                class="email"
+                type="text"
+                placeholder="Email"
+                autocomplete="off"
+              />
+
+              <input
+                id="password"
+                class="password"
+                type="text"
+                placeholder="Password"
+                autocomplete="off"
+              />
+
+              <input
+                id="password2"
+                class="confirm-password"
+                type="text"
+                placeholder="Confirm Password"
+                autocomplete="off"
+              />
+
+              <input
+                id="contact_number"
+                class="phone-number"
+                type="text"
+                placeholder="Phone Number"
+                autocomplete="off"
+              />
+
+              <input
+                id="referer"
+                class="phone-number"
+                type="text"
+                placeholder="Have a Referral Code (optional)"
+                autocomplete="off"
+              />
+
+              <p class="terms-conditions">
+                By clicking register, you agree to our terms and conditions and
+                that you have read our privacy policy
+              </p>
+
+              <div onClick="invokeReg()" class="register-button">
+                <p>Register</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="loader">
+            <img src="assets/images/loader.png" />
+          </div>
+        </div>
+      </div>
+      <!--end of section two container-->
+
+      <!--Start of section three container-->
+      <div class="section-three-container">
+        <div class="section-three-content">
+          <div class="previous">
+            <p><img src="assets/icons/previous.png" alt="previous" /></p>
+          </div>
+          <div class="middle-content">
+            <div class="candle-light">
+              <img src="assets/images/candle.gif" />
+            </div>
+            <div class="empathize-text">
+              <p class="empathy-heading">Empathize with loved ones</p>
+              <p class="empathy-text">
+                It is not how much you give, but that you give, that matters.
+                Myeventsgh is a safe and convenient online event platform that
+                makes it easy for you to give or receive cash gifts at your next
+                event
+              </p>
+              <div class="create-memorial">
+                <p>Create Memorial</p>
+              </div>
+            </div>
+          </div>
+          <div class="next">
+            <p><img src="assets/icons/next.png" alt="next" /></p>
+          </div>
+        </div>
+      </div>
+      <!--End of section three container-->
+
+      <!--Start of Section four container-->
+      <div class="section-four-container">
+        <div class="section-four-content">
+          <div class="price-plan">
+            <p class="price-plan-title">FREE</p>
+            <p class="plan-description">
+              <span class="price">&#x20b5;0</span>
+              <span class="duration">/(5 day trial)</span>
+            </p>
+            <hr />
+
+            <ul class="plan-items">
+              <li>External link share</li>
+              <li>Unlimited Condolences</li>
+              <li>Unlimited Gifts</li>
+              <li class="text-muted">Upload Image</li>
+              <li class="text-muted">Video Upload</li>
+              <li class="text-muted">Voice</li>
+              <li class="text-muted">Money Donations</li>
+              <li class="text-muted">3 Months Renewable</li>
+            </ul>
+
+            <div class="start-button">
+              <p>Start</p>
+            </div>
+          </div>
+
+          <div class="price-plan">
+            <p class="price-plan-title">BASIC</p>
+            <p class="plan-description">
+              <span class="price">&#x20b5;60</span>
+              <span class="duration">/3 months</span>
+            </p>
+            <hr />
+
+            <ul class="plan-items">
+              <li>External link share</li>
+              <li>Unlimited Condolences</li>
+              <li>Unlimited Gifts</li>
+              <li>50 Image Uploads</li>
+              <li>25 Video Uploads</li>
+              <li>50 Voice Uploads</li>
+              <li>Money Donations</li>
+              <li>3 Months Renewable</li>
+            </ul>
+            <div class="start-button">
+              <p>Start</p>
+            </div>
+          </div>
+
+          <div class="price-plan">
+            <p class="price-plan-title">PREMIUM</p>
+            <p class="plan-description">
+              <span class="price">&#x20b5;100</span>
+              <span class="duration">/3 months</span>
+            </p>
+            <hr />
+
+            <ul class="plan-items">
+              <li>External link share</li>
+              <li>Unlimited Condolences</li>
+              <li>Unlimited Gifts</li>
+              <li>150 Image Uploads</li>
+              <li>50 Video Uploads</li>
+              <li>200 Voice Uploads</li>
+              <li>Money Donations</li>
+              <li>3 Months Renewable</li>
+            </ul>
+            <div class="start-button">
+              <p>Start</p>
+            </div>
+          </div>
+
+          <div class="price-plan">
+            <p class="price-plan-title">PR0</p>
+            <p class="plan-description">
+              <span class="price">&#x20b5;500</span>
+              <span class="duration">/Year</span>
+            </p>
+            <hr />
+
+            <ul class="plan-items">
+              <li>External link share</li>
+              <li>Unlimited Condolences</li>
+              <li>Unlimited Gifts</li>
+              <li>Unlimited Image Uploads</li>
+              <li>Unlimited Video Uploads</li>
+              <li>Unlimited Voice Uploads</li>
+              <li>Money Donations</li>
+              <li>3 Months Renewable</li>
+            </ul>
+            <div class="start-button">
+              <p>Start</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of Section four container-->
+
+      <!--start of footer container-->
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="first-section">
+            <div class="left-section">
+              <p class="logo">
+                <img src="assets/images/logo.png" alt="logo" />
+              </p>
+              <p>Sign in</p>
+              <p>Create your own memorial</p>
+              <p>Contact us</p>
+            </div>
+
+            <div class="right-section">
+              <p class="powered-by">Powered by Mobilecontent.com</p>
+            </div>
+          </div>
+
+          <div class="second-section">
+            <div class="left-section">
+              <p class="lorem-ipsum">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                enim enim, metus odio est pellentesque senectus donec.
+              </p>
+            </div>
+            <div class="right-section">
+              <p class="copy-wright">(c)All Rights Reserved 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of footer container-->
+    </div>
+
+    <script>
+      var x = "Total Width: " + screen.width;
+      alert(x);
+    </script>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

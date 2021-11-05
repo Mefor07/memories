@@ -1,0 +1,1351 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #120f2c;
+  max-width: auto;
+}
+
+/*utility style functions*/
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert {
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 694px;
+  height: 40px;
+  margin: 5px;
+  font-family: Nexa;
+}
+
+/*fonts*/
+@font-face {
+  font-family: Nexa;
+  src: url(../assets/fonts/nexa/NexaLight.otf);
+}
+
+@font-face {
+  font-family: NexaBold;
+  src: url(../assets/fonts/nexa/NexaBold.otf);
+}
+
+@font-face {
+  font-family: Cinzel;
+  src: url(../assets/fonts/cinzel/CinzelBold.otf);
+}
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../assets/fonts/roboto/RobotoRegular.ttf);
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(../assets/fonts/roboto/RobotoBold.ttf);
+}
+
+@font-face {
+  font-family: RalewayRegular;
+  src: url(../assets/fonts/raleway/RalewayRegular.ttf);
+}
+
+.main-container {
+  max-width: 100vw;
+  height: 100vh;
+  background: blue;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-container {
+  max-width: auto;
+  height: auto;
+  background: #120f2c;
+  flex-wrap: wrap;
+}
+
+.navbar-content {
+  max-width: 1250px;
+  height: auto;
+  background: #120f2c;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  flex: 0.4;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  background: #120f2c;
+  height: 80px;
+}
+
+.navbar-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 0.6;
+  max-width: auto;
+  flex-wrap: wrap;
+  background: #120f2c;
+}
+
+.navbar-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.navbar-input input {
+  width: 250px;
+  height: 40px;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  font-family: Nexa;
+  color: #888888;
+}
+
+.forgot-password {
+  color: #888888;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 21px;
+  display: flex;
+  margin-left: 17px;
+  background: #120f2c;
+  font-family: Nexa;
+}
+
+.signin {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f6ae00;
+  height: 40px;
+  width: 102px;
+  font-size: 18px;
+  font-style: normal;
+  font-family: RobotoRegular;
+  line-height: 21.09px;
+}
+
+.volume-x {
+  border: 1px solid #f6ae00;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.volume-x img {
+  height: 20px;
+  width: 20px;
+}
+
+.section-two-container {
+  background: #120f2c;
+  max-width: 100vw;
+  height: auto;
+}
+
+.section-two-container .section-two-content {
+  display: flex;
+  flex-wrap: wrap;
+  background: #120f2c;
+  /*background: orangered;*/
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  height: inherit;
+  justify-content: space-between;
+}
+
+.getting-started {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.getting-started .first-text {
+  font-family: Cinzel;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 78px;
+  line-height: 72px;
+  color: #ffffff;
+  background: #120f2c;
+}
+
+.getting-started .second-text {
+  font-family: Nexa;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  background: #120f2c;
+  margin-right: 20px;
+  flex: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#loader {
+  background-color: transparent;
+  position: absolute;
+  right: 30vw;
+  display: none;
+}
+
+.register-form .register-input {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.register-form .register-input input {
+  width: 340px;
+  height: 40px;
+  margin: 5px;
+  background: #1d1d3b;
+  border: none;
+  outline: none;
+  font-family: Nexa;
+  color: #888888;
+}
+
+.register-form .register-input .email,
+.register-form .register-input .phone-number {
+  width: 694px;
+  height: 40px;
+  margin: 5px;
+  font-family: Nexa;
+}
+
+.register-form .register-input .terms-conditions {
+  font-family: Nexa;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 21px;
+  width: 699px;
+  color: #888888;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.register-form .register-input .register-button {
+  height: 40px;
+  width: 699px;
+  color: #ffffffff;
+  background: #c98e00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: NexaBold;
+  margin: 5px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.section-three-container {
+  background: #171433;
+  max-width: 100vw;
+  height: 60vh;
+}
+
+.section-three-content {
+  display: flex;
+  flex-wrap: wrap;
+  background: #171433;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  height: inherit;
+  justify-content: space-evenly;
+}
+.section-three-content .previous {
+  flex: 0.1;
+  background: #171433;
+  margin-left: 20px;
+  display: flex;
+}
+
+.section-three-content .middle-content {
+  flex: 0.8;
+  background: #171433;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-three-content .middle-content .candle-light img {
+  background: #171433;
+  width: 302px;
+  height: 302px;
+}
+
+.section-three-content .middle-content .empathize-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #171433;
+  margin-left: 30px;
+  justify-content: center;
+}
+
+.section-three-content .middle-content .empathize-text .empathy-heading {
+  font-family: Nexa;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 42px;
+  color: #c98e00;
+}
+
+.section-three-content .middle-content .empathize-text .empathy-text {
+  font-family: RalewayRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+  color: #ffffff;
+}
+
+.section-three-content .middle-content .empathize-text .create-memorial {
+  border: 1px solid #f6ae00;
+  width: 183px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: RobotoRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.section-three-content .next {
+  flex: 0.1;
+  background: #171433;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.section-four-container {
+  background: #120f2c;
+  max-width: 1440px;
+  height: 100vh;
+}
+
+.section-four-content {
+  display: flex;
+  flex-wrap: wrap;
+  background: #120f2c;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  height: inherit;
+  justify-content: center;
+}
+
+.section-four-container .section-four-content .price-plan {
+  background: peru;
+  height: 500px;
+  width: 248px;
+  margin: 10px;
+  background: #ffffff;
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-four-container .section-four-content .price-plan .price-plan-title {
+  color: #6c757d;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  font-family: NexaBold;
+  margin-top: 10px;
+}
+
+.section-four-container
+  .section-four-content
+  .price-plan
+  .plan-description
+  .price {
+  font-size: 50px;
+  font-style: bold;
+  font-family: NexaBold;
+}
+
+.section-four-container
+  .section-four-content
+  .price-plan
+  .plan-description
+  .duration {
+  font-size: 15px;
+  font-style: bold;
+  font-family: Nexa;
+}
+
+.section-four-container .section-four-content .price-plan hr {
+  background-color: #666666;
+  height: 0.15px;
+  width: 240px;
+}
+
+.section-four-container .section-four-content .price-plan .plan-items li {
+  font-size: 15px;
+  font-style: bold;
+  font-family: Nexa;
+  margin: 5px;
+  padding: 10px;
+  color: #000000;
+}
+
+.section-four-container .section-four-content .price-plan .start-button {
+  background: #c98e00;
+  color: #ffffff;
+  width: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  font-family: RobotoRegular;
+}
+
+.text-muted {
+  color: #cccccc !important;
+}
+
+.footer-container {
+  background: #000000;
+  max-width: 100vw;
+  height: 40vh;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: #000000;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  height: inherit;
+  justify-content: center;
+}
+
+.footer-content .first-section {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-content .first-section .left-section {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0.6;
+  align-items: center;
+}
+
+.footer-content .first-section .left-section p {
+  margin: 10px;
+  font-family: RobotoRegular;
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer-content .first-section .left-section .logo img {
+  margin-left: 20px;
+}
+
+.footer-content .first-section .right-section {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0.4;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-content .first-section .right-section .powered-by {
+  font-family: RobotoRegular;
+  color: #797979;
+  font-size: 14px;
+}
+
+.footer-content .second-section {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-content .second-section .left-section {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0.6;
+  align-items: center;
+}
+
+.footer-content .second-section .right-section {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0.4;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-content .second-section .left-section .lorem-ipsum {
+  font-family: RobotoRegular;
+  color: #797979;
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+.footer-content .second-section .right-section .copy-wright {
+  font-family: RobotoRegular;
+  color: #797979;
+  font-size: 14px;
+  margin-left: 30px;
+  line-height: 16.41px;
+}
+
+@media all and (max-width: 320px) {
+  .logo-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: indigo;
+    height: 80px;
+  }
+
+  .navbar-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    max-width: auto;
+    flex-wrap: wrap;
+    background: blue;
+  }
+
+  .navbar-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar-input input {
+    margin: 10px;
+  }
+
+  .signin {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f6ae00;
+    height: 40px;
+    width: 102px;
+    margin: 10px;
+    font-size: 18px;
+    line-height: 21.09px;
+  }
+
+  .volume-x {
+    margin: 10px;
+  }
+
+  .forgot-password {
+    margin: 10px;
+  }
+
+  .section-two-content {
+    display: column;
+    justify-content: center;
+  }
+
+  .getting-started .first-text {
+    font-family: Cinzel;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 72px;
+    color: #ffffff;
+    background: crimson;
+  }
+
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    margin-left: 20px;
+  }
+
+  .register-form .register-input input {
+    width: 306px;
+    height: 40px;
+    margin: 5px;
+    background: #1d1d3b;
+    border: none;
+    outline: none;
+  }
+
+  .register-form .register-input .email {
+    width: 306px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .register-form .register-input .phone-number {
+    width: 306px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .register-form .register-input .terms-conditions {
+    width: 306px;
+    height: 80px;
+    margin: 5px;
+  }
+
+  .register-form .register-input .register-button {
+    width: 306px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container {
+    background: chartreuse;
+    max-width: 1440px;
+    height: auto;
+  }
+
+  .section-three-container {
+    background: olivedrab;
+    max-width: 1440px;
+    height: auto;
+  }
+
+  .section-three-content .middle-content .empathize-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: cornflowerblue;
+    margin-left: 0px;
+    align-items: center;
+  }
+
+  .section-four-container {
+    background: olive;
+    max-width: 1440px;
+    height: auto;
+  }
+
+  .footer-container {
+    background: #000000;
+    max-width: 100vw;
+    height: auto;
+  }
+
+  .footer-content .first-section .left-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section .left-section .lorem-ipsum {
+    margin: 18px;
+    text-align: center;
+  }
+}
+
+/*Media Queries*/
+
+@media all and (max-width: 320px) {
+  .navbar-content {
+    padding-top: 1px;
+  }
+
+  .logo-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    height: 80px;
+  }
+
+  .navbar-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    max-width: auto;
+    flex-wrap: wrap;
+    background: transparent;
+  }
+
+  .navbar-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar-input input {
+    margin: 10px;
+  }
+
+  .signin {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f6ae00;
+    height: 40px;
+    width: 102px;
+    margin: 10px;
+    font-size: 18px;
+    line-height: 21.09px;
+  }
+
+  .volume-x {
+    margin: 10px;
+  }
+
+  .forgot-password {
+    margin: 10px;
+  }
+
+  .getting-started .first-text {
+    font-family: Cinzel;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 72px;
+    color: #ffffff;
+    background: transparent;
+  }
+
+  .section-two-container .section-two-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #120f2c;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    height: inherit;
+    justify-content: space-between;
+  }
+
+  .section-two-container .section-two-content .register-form {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  .section-two-container .section-two-content .register-form .register-input {
+    background: transparent;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register-form .register-input input {
+    width: 90%;
+    height: 40px;
+    background: #1d1d3b;
+    border: none;
+    outline: none;
+  }
+
+  .register-form .register-input .email {
+    width: 90%;
+    height: 40px;
+    margin: 0px;
+  }
+
+  .register-form .register-input .phone-number {
+    width: 90%;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .register-form .register-input .terms-conditions {
+    width: 90%;
+    height: 80px;
+    margin: 5px;
+  }
+
+  .register-form .register-input .register-button {
+    width: 90%;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container {
+    background: transparent;
+    max-width: 1440px;
+    height: auto;
+  }
+
+  .section-three-container {
+    background: transparent;
+    max-width: 1440px;
+    height: auto;
+  }
+
+  .section-three-content .middle-content .empathize-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: transparent;
+    margin-left: 0px;
+    align-items: center;
+    height: 100vw;
+  }
+
+  .section-four-container {
+    height: auto;
+  }
+  .section-four-container .section-four-content {
+    background: transparent;
+    max-width: 1440px;
+    height: inherit;
+    display: flex;
+  }
+
+  .section-four-container .section-four-content .price-plan {
+    background: peru;
+    height: auto;
+    width: 248px;
+    margin: 10px;
+    background: #ffffff;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-four-container .section-four-content .price-plan .start-button {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .footer-container {
+    background: #000000;
+    max-width: 100vw;
+    height: auto;
+  }
+
+  .footer-content .first-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .first-section .left-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section .left-section .lorem-ipsum {
+    margin: 18px;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .logo-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    height: 80px;
+  }
+
+  .navbar-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    max-width: auto;
+    flex-wrap: wrap;
+    background: transparent;
+  }
+
+  .navbar-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar-input input {
+    margin: 10px;
+  }
+
+  .signin {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f6ae00;
+    height: 40px;
+    width: 102px;
+    margin: 10px;
+    font-size: 18px;
+    line-height: 21.09px;
+  }
+
+  .volume-x {
+    margin: 10px;
+  }
+
+  .forgot-password {
+    margin: 10px;
+  }
+
+  .section-two-content {
+    display: column;
+    justify-content: center;
+  }
+
+  .getting-started .first-text {
+    font-family: Cinzel;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 72px;
+    color: #ffffff;
+    background: transparent;
+  }
+
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    margin-left: 20px;
+  }
+
+  .register-form .register-input input {
+    width: 306px;
+    height: 40px;
+    margin: 5px;
+    background: #1d1d3b;
+    border: none;
+    outline: none;
+  }
+
+  .register-form .register-input .email {
+    width: 306px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .register-form .register-input .phone-number {
+    width: 306px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .register-form .register-input .terms-conditions {
+    width: 306px;
+    height: 80px;
+    margin: 5px;
+  }
+
+  .register-form .register-input .register-button {
+    width: 306px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container {
+    background: transparent;
+    max-width: 1440px;
+    height: auto;
+  }
+
+  .section-three-container {
+    background: transparent;
+    max-width: 1440px;
+    height: auto;
+    margin-bottom: 100px;
+  }
+
+  .section-three-content .middle-content .empathize-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: transparent;
+    margin-left: 0px;
+    align-items: center;
+  }
+
+  .section-four-container {
+    background: transparent;
+    max-width: 1440px;
+    height: auto;
+  }
+
+  .footer-container {
+    background: #000000;
+    max-width: 100vw;
+    height: auto;
+  }
+
+  .footer-content .first-section .left-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section .left-section .lorem-ipsum {
+    margin: 18px;
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .navbar-content {
+    padding-top: 1px;
+  }
+
+  .logo-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    height: 80px;
+  }
+
+  .navbar-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    max-width: auto;
+    flex-wrap: wrap;
+    background: transparent;
+  }
+
+  .navbar-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar-input input {
+    margin: 10px;
+  }
+
+  .signin {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f6ae00;
+    height: 40px;
+    width: 102px;
+    margin: 10px;
+    font-size: 18px;
+    line-height: 21.09px;
+  }
+
+  .volume-x {
+    margin: 10px;
+  }
+
+  .forgot-password {
+    margin: 10px;
+  }
+
+  .getting-started .first-text {
+    font-family: Cinzel;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 72px;
+    color: #ffffff;
+    background: transparent;
+  }
+
+  .section-two-container .section-two-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #120f2c;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    height: inherit;
+    justify-content: space-between;
+  }
+
+  .section-two-container .section-two-content .register-form {
+    background: transparent;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  #loader {
+    background-color: transparent;
+    position: absolute;
+    right: 45vw;
+    top: 1100px;
+    display: none;
+  }
+
+  .section-two-container .section-two-content .register-form .register-input {
+    background: transparent;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register-form .register-input input {
+    width: 90%;
+    height: 40px;
+    background: #1d1d3b;
+    border: none;
+    outline: none;
+  }
+
+  .alert {
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 40px;
+    margin: 5px;
+    font-family: Nexa;
+  }
+
+  .register-form .register-input .email {
+    width: 90%;
+    height: 40px;
+    margin: 0px;
+  }
+
+  .register-form .register-input .phone-number {
+    width: 90%;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .register-form .register-input .terms-conditions {
+    width: 90%;
+    height: 80px;
+    margin: 5px;
+  }
+
+  .register-form .register-input .register-button {
+    width: 90%;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .section-two-container {
+    background: transparent;
+    max-width: 1440px;
+    height: auto;
+  }
+
+  .section-three-container {
+    background: transparent;
+    max-width: 1440px;
+    height: auto;
+  }
+
+  .section-three-content .middle-content .empathize-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: transparent;
+    margin-left: 0px;
+    align-items: center;
+    height: 100vw;
+  }
+
+  .section-four-container {
+    height: auto;
+  }
+  .section-four-container .section-four-content {
+    background: transparent;
+    max-width: 1440px;
+    height: inherit;
+    display: flex;
+  }
+
+  .section-four-container .section-four-content .price-plan {
+    background: peru;
+    height: auto;
+    width: 248px;
+    margin: 10px;
+    background: #ffffff;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-four-container .section-four-content .price-plan .start-button {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .footer-container {
+    background: #000000;
+    max-width: 100vw;
+    height: auto;
+  }
+
+  .footer-content .first-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .first-section .left-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .footer-content .second-section .left-section .lorem-ipsum {
+    margin: 18px;
+    text-align: center;
+  }
+}
