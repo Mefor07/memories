@@ -90,6 +90,67 @@ function invokeReg() {
   }
 }
 
+//async function for login
+async function login(login_data) {
+  let result;
+
+  try {
+    result = await $.ajax({
+      url: "./api/",
+      type: "POST",
+      contentType: "application/json",
+      data: JSON.stringify(login_data),
+      beforeSend: () => {
+        $("#loader").show();
+        console.log("About to initiate login request");
+      },
+
+      complete: function (login_data) {
+        // Hide image container
+        $("#loader").hide();
+      },
+    });
+
+    return result;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+//actual function called when login is clicked.
+function invokeLog() {
+  //get field values here
+  const login_email = $("#login_email").val();
+  const login_password = $("#login_password").val();
+
+  const login_data = {
+    service: "signIn",
+    email_address: login_email,
+    password: login_password,
+  };
+
+  //check that values are not empty
+
+  if (login_data.email_address === "" || login_data.password === "") {
+    showError("Please fill out all fields.");
+  } else {
+    //make network call
+
+    login(login_data).then((result) => {
+      console.log(result.response.result);
+
+      if (result.response.result !== "success") {
+        showError(result.response.result);
+      } else if (result.response.result === "success") {
+        showSuccess("Logged in successfully, you will be redirected soon.");
+
+        localStorage.setItem("creator_email", login_email);
+        move();
+      }
+    });
+  }
+}
+
 function showError(error) {
   $("#feedback").html(error);
   $("#feedback").show();
@@ -101,3 +162,52 @@ function showSuccess(success) {
   $("#feedback").html(success);
   $("#feedback").show();
 }
+
+function showPaymentDialogue() {
+  //get the modal
+  var modal = document.getElementById("paymentModal");
+
+  //get the start buttons
+  var proBtn = document.getElementById("start-pro");
+  var premiumBtn = document.getElementById("start-premium");
+  var basicBtn = document.getElementById("start-basic");
+  var freeBtn = document.getElementById("start-free");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  var cancel = document.getElementsByClassName("cancel")[0];
+
+  // When the user clicks on the button, open the modal
+  proBtn.onclick = function () {
+    modal.style.display = "block";
+  };
+
+  premiumBtn.onclick = function () {
+    modal.style.display = "block";
+  };
+
+  basicBtn.onclick = function () {
+    modal.style.display = "block";
+  };
+
+  freeBtn.onclick = function () {
+    modal.style.display = "block";
+  };
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  cancel.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+}
+
+showPaymentDialogue();

@@ -23,21 +23,21 @@
           <div class="navbar-input-container">
             <div class="navbar-input">
               <input
-                id="login-email"
+                id="login_email"
                 class="login-email"
                 type="text"
                 placeholder="Email Address"
                 autocomplete="off"
               />
               <input
-                id="login-password"
+                id="login_password"
                 class="login-password"
                 type="password"
                 placeholder="password"
                 autocomplete="off"
               />
 
-              <div class="signin">
+              <div onclick="invokeLog()" class="signin">
                 <p>Signin</p>
               </div>
 
@@ -198,7 +198,7 @@
               <li class="text-muted">3 Months Renewable</li>
             </ul>
 
-            <div class="start-button">
+            <div id="start-free" class="start-button">
               <p>Start</p>
             </div>
           </div>
@@ -221,7 +221,7 @@
               <li>Money Donations</li>
               <li>3 Months Renewable</li>
             </ul>
-            <div class="start-button">
+            <div id="start-basic" class="start-button">
               <p>Start</p>
             </div>
           </div>
@@ -244,7 +244,7 @@
               <li>Money Donations</li>
               <li>3 Months Renewable</li>
             </ul>
-            <div class="start-button">
+            <div id="start-premium" class="start-button">
               <p>Start</p>
             </div>
           </div>
@@ -267,7 +267,7 @@
               <li>Money Donations</li>
               <li>3 Months Renewable</li>
             </ul>
-            <div class="start-button">
+            <div id="start-pro" class="start-button">
               <p>Start</p>
             </div>
           </div>
@@ -307,6 +307,54 @@
         </div>
       </div>
       <!--End of footer container-->
+
+      <!--start of modal here-->
+
+      <div id="paymentModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="payment-option-area">
+            <div class="master-card-container">
+              <input type="radio" id="html" name="fav_language" value="HTML" />
+              <img src="assets/icons/ic_mastercard.png" alt="master card" />
+            </div>
+            <div class="visa-card-container">
+              <input type="radio" id="html" name="fav_language" value="HTML" />
+              <img src="assets/icons/ic_visa.png" alt="master card" />
+            </div>
+            <div class="momo-container">
+              <input type="radio" id="html" name="fav_language" value="HTML" />
+              <img src="assets/icons/ic_visa.png" alt="master card" />
+            </div>
+          </div>
+          <div class="field-area">
+            <select class="select">
+              <option value="none">Select Network</option>
+              <option value="mtn-gh">MTN</option>
+              <option value="airtel-gh">AIRTELTIGO</option>
+              <option value="vodafone-gh-ussd">VODAFONE</option>
+            </select>
+            <input
+              class="momo-number-field"
+              type="text"
+              placeholder="Enter your mobile money number"
+            />
+
+            <input
+              class="momo-number-field"
+              type="text"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <div class="button-area">
+            <div class="cancel">Cancel</div>
+            <div class="authorize">Authorize</div>
+          </div>
+        </div>
+      </div>
+      <!--end of modal here-->
     </div>
 
     <script>
